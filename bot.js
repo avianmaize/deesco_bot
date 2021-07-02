@@ -39,7 +39,6 @@ client.on('message', (message) => {
                 .setDescription(`${PREFIX}dice\n
                 ${PREFIX}coin\n
                 ${PREFIX}number`);
-                // .setTimestamp();
             
             message.channel.send(helpMessage);
         }
@@ -50,8 +49,7 @@ client.on('message', (message) => {
             const diceMessage = new Discord.MessageEmbed()
                 .setTitle('Rolling a die')
                 .setColor([Math.floor(Math.random()*256), Math.floor(Math.random()*256), Math.floor(Math.random()*256)])
-                .setDescription(`You rolled a [${number}]`)
-                .setTimestamp();
+                .setDescription(`You rolled a [${number}]`);
             
             message.channel.send(diceMessage);
         }
@@ -70,8 +68,7 @@ client.on('message', (message) => {
             const coinMessage = new Discord.MessageEmbed()
                 .setTitle('Flipping a coin')
                 .setColor([Math.floor(Math.random()*256), Math.floor(Math.random()*256), Math.floor(Math.random()*256)])
-                .setDescription(`You flipped a [${coinResult}]`)
-                .setTimestamp()
+                .setDescription(`You flipped a [${coinResult}]`);
             
             message.channel.send(coinMessage);
         }
@@ -88,8 +85,7 @@ client.on('message', (message) => {
             const numberMessage = new Discord.MessageEmbed()
                 .setTitle('Generating a random number')
                 .setColor([Math.floor(Math.random()*256), Math.floor(Math.random()*256), Math.floor(Math.random()*256)])
-                .setDescription(`Number: ${number}`)
-                .setTimestamp()
+                .setDescription(`Number: ${number}`);
             
             message.channel.send(numberMessage);
         }
