@@ -89,6 +89,10 @@ client.on('message', (message) => {
             
             message.channel.send(numberMessage);
         }
+
+        if (CMD_NAME === 'disco') {
+            message.channel.send("https://youtu.be/zrsBjYukE8s");
+        }
     }
 
     if (message.content.toLowerCase() === 'ping') {
