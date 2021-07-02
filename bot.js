@@ -38,8 +38,8 @@ client.on('message', (message) => {
                 .setColor([Math.floor(Math.random()*256), Math.floor(Math.random()*256), Math.floor(Math.random()*256)])
                 .setDescription(`${PREFIX}dice\n
                 ${PREFIX}coin\n
-                ${PREFIX}number`)
-                .setTimestamp();
+                ${PREFIX}number`);
+                // .setTimestamp();
             
             message.channel.send(helpMessage);
         }
